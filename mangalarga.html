@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangalarga Marchador USA - Interest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'LucideIcons';
+        src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
+      }
+      .lucide {
+        font-family: 'LucideIcons';
+        font-size: 1.25rem; /* Default icon size */
+        line-height: 1;
+      }
+      body {
+        font-family: 'Inter', sans-serif; /* Apply Inter font */
+      }
+      /* Dark theme input styles based on new palette */
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        background-color: #141414; /* bg-primary */
+        border-color: #142828; /* border-color */
+        color: #e5e7eb; /* text-primary */
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      textarea:focus {
+        border-color: #283c3c; /* accent-primary */
+        --tw-ring-color: #283c3c; /* accent-primary */
+         box-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      }
+      input::placeholder,
+      textarea::placeholder {
+          color: #9ca3af; /* text-secondary */
+      }
+      /* Ensure images in feature boxes don't exceed the box height - Height Increased */
+      .feature-image {
+        height: 20rem; /* 320px, increased from 10rem */
+        object-fit: cover; /* Crop image nicely */
+      }
+
+    </style>
+    <script>
+        // Tailwind basic configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Define colors from the new palette
+                        'primary': '#141414',
+                        'secondary': '#282828',
+                        'accent-primary': '#283c3c',
+                        'accent-secondary': '#143c3c', // Darker teal for hover/borders
+                        'border-color': '#142828',
+                        'deep-dark': '#001414',
+                        // Text colors for contrast
+                        'text-primary': '#e5e7eb', // Light gray (gray-200)
+                        'text-secondary': '#9ca3af' // Medium gray (gray-400)
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary text-text-primary">
+
+    <header class="bg-secondary shadow-md sticky top-0 z-10 border-b border-border-color">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-semibold text-text-primary">Mangalarga Marchador USA</div>
+            <div>
+                <a href="#about" class="text-text-secondary hover:text-accent-primary px-3 py-2 rounded-md text-sm">About</a>
+                <a href="#why" class="text-text-secondary hover:text-accent-primary px-3 py-2 rounded-md text-sm">Why?</a>
+                <a href="#contact" class="bg-accent-primary hover:bg-accent-secondary text-text-primary px-4 py-2 rounded-md shadow-sm transition duration-300 text-sm font-medium">I'm Interested</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative h-[60vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('https://blog.7mboots.com.br/wp-content/uploads/2025/02/blog-3743-1024x683.jpg');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-1 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Discover the Mangalarga Marchador in the USA</h1>
+            <p class="text-lg md:text-xl mb-8">The Brazilian saddle horse breed known for its comfort and endurance.</p>
+            <a href="#contact" class="bg-accent-primary hover:bg-accent-secondary text-text-primary px-8 py-3 rounded-md shadow-lg text-lg font-semibold transition duration-300">Register Your Interest</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-secondary">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-text-primary mb-6">About the Mangalarga Marchador</h2>
+            <p class="max-w-3xl mx-auto text-text-secondary mb-10">
+                Originating from Brazil, the Mangalarga Marchador is famous for its characteristic gait – incredibly smooth and comfortable for the rider. It's a versatile horse, ideal for leisure, long trail rides, and light work.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-primary rounded-lg border border-border-color hover:border-accent-secondary transition duration-300 overflow-hidden">
+                    <img src="https://www.jornaldeuberaba.com.br/images/noticias/86922/c34771c1e6ecf4f6b75ab6731a1e25d9.webp"
+                         alt="Mangalarga Marchador demonstrating gait"
+                         class="w-full feature-image"
+                         onerror="this.onerror=null; this.src='https://placehold.co/300x320/141414/9ca3af?text=Image+Error'; this.alt='Error loading gait image'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Comfortable Gait</h3>
+                        <p class="text-text-secondary text-sm">The 'marcha picada' or 'marcha batida' offers an unparalleled smooth riding experience.</p>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-lg border border-border-color hover:border-accent-secondary transition duration-300 overflow-hidden">
+                     <img src="https://img.freepik.com/fotos-gratis/uma-jovem-alimenta-um-cavalo-com-cenouras_1321-3738.jpg"
+                          alt="Person feeding carrots to a horse"
+                          class="w-full feature-image"
+                          onerror="this.onerror=null; this.src='https://placehold.co/300x320/141414/9ca3af?text=Image+Error'; this.alt='Error loading temperament image'">
+                     <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Docile Temperament</h3>
+                        <p class="text-text-secondary text-sm">They are known for being intelligent, docile, and easy to handle.</p>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-lg border border-border-color hover:border-accent-secondary transition duration-300 overflow-hidden">
+                    <img src="https://www.viajaracavalo.com.br/js/timthumb.php?src=imagens/destinos/IMG_20190809_163321307_HDR.jpg&w=800&h=600"
+                         alt="Mangalarga Marchador horse on a trail ride"
+                         class="w-full feature-image"
+                         onerror="this.onerror=null; this.src='https://placehold.co/300x320/141414/9ca3af?text=Image+Error'; this.alt='Error loading endurance image'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Endurance</h3>
+                        <p class="text-text-secondary text-sm">Excellent for long distances and various types of terrain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="py-16 bg-primary">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2">
+                 <img src="https://cavalus.com.br/wp-content/uploads/2024/02/Proposta-quer-fortalecer-exportacao-de-cavalos-da-raca-Mangalarga-Marchador.jpg"
+                      alt="Presentation of Mangalarga Marchador horses"
+                      class="rounded-lg shadow-md w-full h-auto object-cover border border-border-color"
+                      onerror="this.onerror=null; this.src='https://placehold.co/600x400/141414/9ca3af?text=Image+Error'; this.alt='Error loading presentation image'">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-text-primary mb-6">Why a Mangalarga Marchador in the USA?</h2>
+                <p class="text-text-secondary mb-4">
+                    If you're looking for a reliable saddle horse, comfortable for long hours of riding, and with a friendly temperament, the Mangalarga Marchador is an excellent choice.
+                </p>
+                <ul class="list-none space-y-3 text-text-secondary">
+                    <li class="flex items-start">
+                        <span class="lucide text-accent-primary mr-2 flex-shrink-0">&#xe117;</span> <span>Ideal for riders of all experience levels.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="lucide text-accent-primary mr-2 flex-shrink-0">&#xe117;</span> <span>Perfect for trails, recreational riding, and light endurance.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="lucide text-accent-primary mr-2 flex-shrink-0">&#xe117;</span> <span>A breed that charms with its beauty, intelligence, and loyalty.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-secondary">
+        <div class="container mx-auto px-6 max-w-2xl text-center">
+            <h2 class="text-3xl font-bold text-text-primary mb-6">Register Your Interest</h2>
+            <p class="text-text-secondary mb-8">
+                We are assessing the demand for Mangalarga Marchador horses in the United States. If you are interested in acquiring one or learning more, please fill out the form below. Your contact is very important to us!
+            </p>
+            <form action="#" method="POST" class="space-y-6 text-left">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-text-secondary">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-accent-primary focus:border-accent-primary sm:text-sm bg-primary text-text-primary placeholder-text-secondary">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-text-secondary">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-accent-primary focus:border-accent-primary sm:text-sm bg-primary text-text-primary placeholder-text-secondary">
+                </div>
+                 <div>
+                    <label for="state" class="block text-sm font-medium text-text-secondary">State (USA)</label>
+                    <input type="text" id="state" name="state" placeholder="Ex: California, Texas, Florida" class="mt-1 block w-full px-3 py-2 border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-accent-primary focus:border-accent-primary sm:text-sm bg-primary text-text-primary placeholder-text-secondary">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-text-secondary">Message (Optional)</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-border-color rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-accent-primary focus:border-accent-primary sm:text-sm bg-primary text-text-primary placeholder-text-secondary" placeholder="Leave a message if you wish..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-lg font-medium rounded-md text-text-primary bg-accent-primary hover:bg-accent-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondary focus:ring-accent-primary transition duration-300">
+                        Submit Interest
+                    </button>
+                </div>
+            </form>
+             <p class="mt-6 text-xs text-text-secondary">
+                *This form is for interest gathering only and does not submit real data at this time.
+             </p>
+        </div>
+    </section>
+
+    <footer class="bg-deep-dark text-text-secondary py-8 border-t border-border-color mt-12">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; <span id="current-year"></span> Mangalarga Marchador USA Interest. All rights reserved (simulation).</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to update the year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Optional smooth scroll script
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
